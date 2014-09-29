@@ -1,0 +1,15 @@
+{
+  "id": "maven",
+  "username": {
+    "encrypted_data": "jwqyQGmpN3yn8YHyODZgGV9zfMg5B2hnOQ3FKs+1pzZqmtSTmHyd3rdqgSpi\n3jfg\n",
+    "iv": "Bg86+g5JiBXN0KOtQf2yYA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "password": {
+    "encrypted_data": "PlOGVfnb5siZER64w0iJ9A3kG1eEnG3XE5CIrLHKrF8mS8djnlkS3jk1xkZI\n/IMR\n",
+    "iv": "YPfClv3OMK21dcDZG0Wung==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

@@ -1,0 +1,28 @@
+---
+driver:
+  name: docker
+driver_config:
+  use_sudo: false
+  provision_command: curl -L https://www.getchef.com/chef/install.sh | bash
+  volume: /home/patxi/git/optsicom-chef/test/integration/resources:/optsicom-chef
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: jenkins
+    data_bags_path: "test/integration/data_bags"
+    run_list:
+      - recipe[optsicom::deploy]
+      - recipe[optsicom::test]
+    attributes: 
+      optsicom:
+        deploy:
+          user: "kitchen"
+          group: "kitchen"
+          home: "/home/kitchen"
+          secret_path: "/optsicom-chef/optsicom_test_key"
+          key_name: "Optsicom Test"

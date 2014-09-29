@@ -1,0 +1,5 @@
+default['optsicom']['deploy']['user'] = "jenkins"
+default['optsicom']['deploy']['group'] = "jenkins"
+default['optsicom']['deploy']['home'] = "/var/lib/jenkins"
+default['optsicom']['deploy']['secret_path'] = "/var/lib/jenkins"
+default['optsicom']['deploy']['key_name'] = "Optsicom"
